@@ -1,0 +1,168 @@
+/*FONT*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@300;700&display=swap');
+
+* { overflow: hid}
+
+:root {
+	--header-font: 'MuseoModerno', cursive;
+    --lavender: #C5C3FB;
+	--dark-purple: #6865cb;
+    --cursive-font: 'Dancing Script', cursive;
+    --body-font: 'Poppins', sans-serif;
+	scroll-behavior: smooth;
+}
+body {
+    background-color: var(--lavender);
+    font-family: var(--body-font);
+}
+nav li{
+    text-align: center;
+    padding-right: 1em;
+}
+nav li:hover {
+    font-weight: bold;
+    color: var(--dark-purple);
+    transition: all 0.6s ease;
+}
+.navbar {
+    position: fixed;
+    width:100vw;
+    z-index: 99;
+}
+#home{
+    position: relative;
+    top: 40vh;
+    height: 100vh;
+    line-height: 100px;
+    white-space: nowrap;
+    
+    /* left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
+    text-align: center;
+}
+#home .container h1 {
+    padding-bottom: .4em;
+    color: var(--dark-purple);
+    font-weight: bold;
+    font-size: 4rem;
+    font-family: var(--cursive-font);
+}
+#visionMission{
+    height: 51vh;
+    text-align: center;
+}
+
+#visionMission li {
+    text-align: left;
+}
+#visionMission .d-flex {
+    flex-direction: row;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#aibers {
+     margin: 6rem 1.5rem 6rem 1.5rem; 
+}
+#aibers .container .info {
+    text-align: center;
+}
+.info h2 {
+    font-family: var(--cursive-font);
+    color: var(--dark-purple);
+}
+.info h1 {
+    font-family: var(--body-font);
+    font-weight: bold;
+    font-size: 2.7em;
+}
+.aib-tabs { 
+    justify-content: center;
+    text-align:center;
+
+}
+.aib-tabs button{
+    background-color: transparent;
+    border-color: transparent;
+}
+.aib-tabs button:hover{
+    color:var(--dark-purple);
+    
+}
+.aib-item { 
+    margin-top: 1rem;
+    border-style: dashed;
+    border-top: 2px;
+    border-left: 2px;
+    border-right: 2px;
+    border-color:rgba(39, 34, 34, 0.75) ;
+}
+.aib-tab-item.active{
+    color:var(--dark-purple);
+    background-color: white;
+    border-radius: 30px;
+}
+
+.aib-tab-content.active {
+    display: flex;
+}
+.aib-tab-content {
+    display: none;
+}
+.aib-item-title{
+    display: flex;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    max-width: calc(100% - 80px);
+}
+.aib-item-title h3 {
+    margin-left: 10px;
+    text-transform: capitalize;
+}
+.aib-item-title img{
+    border-radius: 10px;
+    width: 7.5rem;
+    height: 7.5rem;
+    object-fit: cover;
+    background-position: center;
+}
+footer{
+    background-color: var(--dark-purple);
+    color: white;
+    text-align: center;
+    width: 100vw;
+}
+.special-edition{
+    text-align: center;
+}
+.youtube-info {
+    text-transform: capitalize;
+    font-family: var(--cursive-font);
+}
+.youtube-info > h2 {
+    font-size: 30px;
+}
+iframe{
+    margin:25px;
+}
+#pantun {
+    padding-top: 3em;
+    margin-bottom: 20px;
+    padding-bottom: 3em;
+}
+footer {
+    height: 9vmin;
+    padding: 0.8vmax;
+}
+footer > p {
+    margin: 0px; display: inline; font-size: 3.5vmin;
+}
+@media(min-width:1000px){
+	#aibers {
+        margin-top: 1rem;
+    }
+}
